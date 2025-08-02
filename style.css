@@ -59,7 +59,7 @@ body::before {
 
 .card {
     position: relative;
-    width: 100%;
+    width: 90%;
     padding: 2px;
     border-radius: 15px;
     background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
@@ -71,6 +71,13 @@ body::before {
 
 .card:hover {
     transform: rotateY(5deg) rotateX(5deg);
+}
+@media (max-width: 600px) {
+    .card {
+        width: 95%; /* Slightly wider on small screens */
+        min-height: auto; /* Flexible height */
+        padding: 15px; /* Better spacing */
+    }
 }
 
 .glow {
@@ -452,4 +459,5 @@ html, body {
         height: 40px;
         font-size: 18px;
     }
+
 }
