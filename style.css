@@ -13,6 +13,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+.card {
+    width: 90%; /* Takes 90% of mobile screen */
+    max-width: 500px; /* But never wider than 500px */
+    margin: 20px auto; /* Centers the card */
+    min-height: 300px; /* Prevents height collapse */
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -461,3 +467,4 @@ html, body {
     }
 
 }
+
